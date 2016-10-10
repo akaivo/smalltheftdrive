@@ -117,7 +117,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a22ae2ea6db2d564eba5f3f955c11dae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  setSpeed: 9
+  setSpeed: 1
+  bunnyPrefab: {fileID: 1000011527616322, guid: 4c461e274a7a7d6429e7faa01f749d76,
+    type: 2}
+  bunninity: 1
 --- !u!4 &267673362
 Transform:
   m_ObjectHideFlags: 0
