@@ -3,7 +3,6 @@ using System.Collections;
 
 public class BulletMaker : MonoBehaviour {
 	public GameObject bulletPrefab;
-	public float bulletSpeed;
 	// Use this for initialization
 	void Start () {
 	
