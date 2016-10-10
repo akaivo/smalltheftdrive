@@ -22,6 +22,7 @@ GameObject:
   - 212: {fileID: 212000011328672016}
   - 114: {fileID: 114000013361518616}
   - 50: {fileID: 50000011651934520}
+  - 58: {fileID: 58000010192655502}
   m_Layer: 0
   m_Name: bullet
   m_TagString: Untagged
@@ -59,6 +60,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!58 &58000010192655502
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012835383996}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
 --- !u!114 &114000013361518616
 MonoBehaviour:
   m_ObjectHideFlags: 1
