@@ -17,6 +17,7 @@ public class BulletMaker : MonoBehaviour {
 			Bullet bullet = bulletGO.GetComponent<Bullet> ();
 			bullet.transform.position = transform.position;
 			Rigidbody2D rb = bullet.GetComponent<Rigidbody2D> ();
+            
 			Vector3 direction = (Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position).normalized;
             shot.Play();
 			rb.velocity = direction * bullet.bulletSpeed;
