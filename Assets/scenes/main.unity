@@ -253,6 +253,7 @@ MonoBehaviour:
     type: 2}
   right: 0
   bulletSpeed: 0
+  shot: {fileID: 8300000, guid: 07f7aceb8905dee40a6b1e0b156f5c88, type: 3}
 --- !u!82 &937248996
 AudioSource:
   m_ObjectHideFlags: 0
@@ -264,7 +265,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 07f7aceb8905dee40a6b1e0b156f5c88, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.8
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -685,6 +686,7 @@ MonoBehaviour:
     type: 2}
   right: 0
   bulletSpeed: 0
+  shot: {fileID: 8300000, guid: 07f7aceb8905dee40a6b1e0b156f5c88, type: 3}
 --- !u!82 &1694980273
 AudioSource:
   m_ObjectHideFlags: 0
@@ -696,7 +698,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 07f7aceb8905dee40a6b1e0b156f5c88, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.8
   m_Pitch: 1
   Loop: 0
   Mute: 0

@@ -5,12 +5,8 @@ public class BulletMaker : MonoBehaviour {
 	public GameObject bulletPrefab;
 	public bool right;
 	public float bulletSpeed;
-    private AudioSource shot;
+	public AudioClip shot;
 	// Use this for initialization
-	void Start () {
-        shot = this.GetComponent<AudioSource>();
-	}
-	
 
 	void Shoot(){
 		Vector3 targetPoint = Camera.main.ScreenToWorldPoint (Input.mousePosition);
@@ -21,8 +17,20 @@ public class BulletMaker : MonoBehaviour {
 		Vector3 direction = (targetPoint- transform.position);
 		direction.z = 0;
 		direction.Normalize ();
-		shot.Play();
 		rb.velocity = direction.normalized * bullet.bulletSpeed;
 
+		AudioSource audioSource = gameObject.AddComponent<AudioSource> ();
+		audioSource.clip = shot;
+		audioSource.playOnAwake = false;
+
+		audioSource.Play();
+	}
+	void Update(){
+		AudioSource[] audioSources = gameObject.GetComponents<AudioSource> ();
+		foreach (AudioSource audioSource in audioSources) {
+			if (!audioSource.isPlaying) {
+				Destroy (audioSource);
+			}
+		}
 	}
 }
