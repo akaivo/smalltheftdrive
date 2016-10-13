@@ -120,7 +120,7 @@ MonoBehaviour:
   setSpeed: 1
   bunnyPrefab: {fileID: 1000011527616322, guid: 4c461e274a7a7d6429e7faa01f749d76,
     type: 2}
-  bunninity: 1
+  bunninity: 3
 --- !u!4 &267673362
 Transform:
   m_ObjectHideFlags: 0

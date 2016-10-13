@@ -18,5 +18,7 @@ public class GameMain : MonoBehaviour {
 		if (chanceOfBunny > number) {
 			GameObject bunnyGo = Instantiate (bunnyPrefab);
 		}
+		if (Input.GetKey("escape"))
+			Application.Quit();
 	}
 }
