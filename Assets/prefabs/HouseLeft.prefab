@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000011376189580}
   - 212: {fileID: 212000010884744184}
+  - 114: {fileID: 114000014249808178}
   m_Layer: 0
   m_Name: HouseLeft
   m_TagString: Untagged
@@ -70,6 +71,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4000011376189580}
   m_RootOrder: 0
+--- !u!114 &114000014249808178
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012099089936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03f193cc13f123d4e96f8967bdfb9ffa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212000010884744184
 SpriteRenderer:
   m_ObjectHideFlags: 1
