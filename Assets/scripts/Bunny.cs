@@ -5,7 +5,7 @@ public class Bunny : MonoBehaviour {
 	public GameObject rainbowPrefab;
 	// Use this for initialization
 	void Start () {
-		transform.position = new Vector3(Random.Range(-5f,5f),10,0);
+		transform.position = new Vector3(Random.Range(-3.5f,3.5f),10,0);
 	}
 	
 	// Update is called once per frame
