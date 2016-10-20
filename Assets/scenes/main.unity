@@ -120,6 +120,11 @@ MonoBehaviour:
   setSpeed: 1
   bunnyPrefab: {fileID: 1000011527616322, guid: 4c461e274a7a7d6429e7faa01f749d76,
     type: 2}
+  housePrefabLeft: {fileID: 1000012099089936, guid: 52841fcda06adc54f881760ef4b3c166,
+    type: 2}
+  housePrefabRight: {fileID: 1000010066276248, guid: d2ee7523f1836874f83a9dec7815c8d8,
+    type: 2}
+  houseCooldown: 0
   bunninity: 3
 --- !u!4 &267673362
 Transform:
@@ -614,7 +619,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 5.1181383
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
