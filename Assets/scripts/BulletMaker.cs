@@ -7,6 +7,7 @@ public class BulletMaker : MonoBehaviour {
 	public float bulletSpeed;
 	public AudioClip shot;
 	// Use this for initialization
+  
 
 	void Shoot(){
 		Vector3 targetPoint = Camera.main.ScreenToWorldPoint (Input.mousePosition);
