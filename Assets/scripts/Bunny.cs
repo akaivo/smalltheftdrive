@@ -3,6 +3,7 @@ using System.Collections;
 
 public class Bunny : MonoBehaviour {
 	public GameObject rainbowPrefab;
+	public GameObject starPrefab;
 	public int points;
 	// Use this for initialization
 	void Start ()
@@ -24,6 +25,7 @@ public class Bunny : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D coll) {
 		ScoreKeeper.score += points;
 		GameObject rainbow = Instantiate (rainbowPrefab);
+		rainbow.GetComponent<Rainbow> ().starPrefab = starPrefab;
 		rainbow.transform.position = transform.position;
 	}
 		

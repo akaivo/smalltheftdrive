@@ -120,12 +120,15 @@ MonoBehaviour:
   setSpeed: 1
   bunnyPrefab: {fileID: 1000011527616322, guid: 4c461e274a7a7d6429e7faa01f749d76,
     type: 2}
+  gangsterPrefab: {fileID: 1000011527616322, guid: e503919ad3a38ff46939b6beafba27cc,
+    type: 2}
   housePrefabLeft: {fileID: 1000012099089936, guid: 52841fcda06adc54f881760ef4b3c166,
     type: 2}
   housePrefabRight: {fileID: 1000010066276248, guid: d2ee7523f1836874f83a9dec7815c8d8,
     type: 2}
   houseCooldown: 0
-  bunninity: 3
+  bunninity: 1
+  gangsterinity: 1
 --- !u!4 &267673362
 Transform:
   m_ObjectHideFlags: 0
