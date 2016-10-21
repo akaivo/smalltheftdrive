@@ -5,11 +5,13 @@ public class GameMain : MonoBehaviour {
 	public static float speed;
 	public float setSpeed;
 	public GameObject bunnyPrefab;
+	public GameObject gangsterPrefab;
     public GameObject housePrefabLeft;
     public GameObject housePrefabRight;
     public float houseCooldown;
     private float houseTimestamp;
 	public float bunninity;
+	public float gangsterinity;
 
 	// Use this for initialization
 	void Start () {
@@ -19,6 +21,7 @@ public class GameMain : MonoBehaviour {
 	}
 
 	void Update(){
+		GansterProcessor ();
         BunnyProcessor();
 	    HouseProcessor();
 		if (Input.GetKey("escape"))
@@ -46,4 +49,13 @@ public class GameMain : MonoBehaviour {
             GameObject bunnyGo = Instantiate(bunnyPrefab);
         }
     }
+	void GansterProcessor()
+	{
+		float number = Random.value;
+		float chanceOfGangster = Time.deltaTime * gangsterinity;
+		if (chanceOfGangster > number)
+		{
+			GameObject gangsterGO = Instantiate(gangsterPrefab);
+		}
+	}
 }

@@ -9,7 +9,6 @@ public class Car : MonoBehaviour {
     // Use this for initialization
     void Start ()
     {
-        bulletCooldown = 2;
         bulletTimestamp = 0;
     }
 	
