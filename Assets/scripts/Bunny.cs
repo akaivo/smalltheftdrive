@@ -5,8 +5,12 @@ public class Bunny : MonoBehaviour {
 	public GameObject rainbowPrefab;
 	public int points;
 	// Use this for initialization
-	void Start () {
-		transform.position = new Vector3(Random.Range(-3.5f,3.5f),10,0);
+	void Start ()
+	{
+	    int rand = Random.Range(-1, 1);
+	    float xPos = Random.Range(1.95f, 3.5f);
+	    xPos = rand >= 0 ? xPos : (xPos*-1);
+		transform.position = new Vector3(xPos,10,0);
 	}
 	
 	// Update is called once per frame
