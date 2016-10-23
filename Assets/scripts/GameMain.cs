@@ -16,6 +16,7 @@ public class GameMain : MonoBehaviour {
     private float houseTimestamp;
 	public float bunninity;
 	public float gangsterinity;
+   
 
 
 	// Use this for initialization

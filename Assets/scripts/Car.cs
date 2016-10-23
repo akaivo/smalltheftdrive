@@ -1,5 +1,8 @@
 ﻿using UnityEngine;
+using UnityEditor.SceneManagement;
 using System.Collections;
+using UnityEditor;
+using UnityEngine.SceneManagement;
 
 public class Car : MonoBehaviour {
 	public GameObject shootingPointRight;
@@ -18,7 +21,7 @@ public class Car : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (GameMain.chaseMode) {
+		if (SceneManager.GetActiveScene().name == "scenes/chase") {
 			readChaseKeys ();
 		} else {
 			readShootKeys ();
