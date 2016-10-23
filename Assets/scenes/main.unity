@@ -146,6 +146,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   setSpeed: 1
+  setChaseMode: 1
   bunnyPrefab: {fileID: 1000011527616322, guid: 4c461e274a7a7d6429e7faa01f749d76,
     type: 2}
   gangsterPrefab: {fileID: 1000011527616322, guid: e503919ad3a38ff46939b6beafba27cc,
@@ -157,7 +158,6 @@ MonoBehaviour:
   houseCooldown: 0
   bunninity: 1
   gangsterinity: 1
-
 --- !u!4 &267673362
 Transform:
   m_ObjectHideFlags: 0
@@ -593,6 +593,10 @@ MonoBehaviour:
   shootingPointLeft: {fileID: 937248993}
   bulletCooldown: 2
   bulletTimestamp: 0
+  defaultX: 0
+  limitRight: 0
+  limitLeft: 0
+  turnSpeed: 10
 --- !u!1 &1095250852
 GameObject:
   m_ObjectHideFlags: 0
