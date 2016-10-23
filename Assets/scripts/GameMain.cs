@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameMain : MonoBehaviour {
 	public static float speed;
@@ -13,11 +15,13 @@ public class GameMain : MonoBehaviour {
 	public float bunninity;
 	public float gangsterinity;
 
+
 	// Use this for initialization
 	void Start () {
 		speed = setSpeed;
 	    houseTimestamp = 0;
 	    houseCooldown = 5;
+
 	}
 
 	void Update(){
@@ -26,6 +30,7 @@ public class GameMain : MonoBehaviour {
 	    HouseProcessor();
 		if (Input.GetKey("escape"))
 			Application.Quit();
+      
 	}
 
     void HouseProcessor()

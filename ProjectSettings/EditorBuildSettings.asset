@@ -9,3 +9,5 @@ EditorBuildSettings:
     path: Assets/scenes/mainMenu.unity
   - enabled: 1
     path: Assets/scenes/main.unity
+  - enabled: 1
+    path: Assets/scenes/chase.unity
