@@ -1,7 +1,5 @@
 ﻿using UnityEngine;
-using UnityEditor.SceneManagement;
 using System.Collections;
-using UnityEditor;
 using UnityEngine.SceneManagement;
 
 public class Car : MonoBehaviour {
