@@ -21,6 +21,7 @@ GameObject:
   - 4: {fileID: 4000012388111860}
   - 212: {fileID: 212000013538404958}
   - 61: {fileID: 61000012943964084}
+  - 114: {fileID: 114000013309370204}
   m_Layer: 0
   m_Name: Police
   m_TagString: Untagged
@@ -55,6 +56,17 @@ BoxCollider2D:
   m_Offset: {x: -0.007103046, y: -0.04261621}
   serializedVersion: 2
   m_Size: {x: 0.9263746, y: 2.1622474}
+--- !u!114 &114000013309370204
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013122615896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ff65842f657f0d4b9cf1d87c10f44c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212000013538404958
 SpriteRenderer:
   m_ObjectHideFlags: 1

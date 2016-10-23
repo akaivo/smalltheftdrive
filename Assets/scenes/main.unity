@@ -158,6 +158,8 @@ MonoBehaviour:
     type: 2}
   spikestripPrefab: {fileID: 1000011655354700, guid: beaea103d6eb8894a8bda2ca1c7d49b0,
     type: 2}
+  policePrefab: {fileID: 1000013122615896, guid: d6e56b582158fe049a4ed7a6f35b8904,
+    type: 2}
   houseCooldown: 0
   bunninity: 1
   gangsterinity: 1

@@ -13,6 +13,7 @@ public class GameMain : MonoBehaviour {
     public GameObject housePrefabLeft;
     public GameObject housePrefabRight;
 	public GameObject spikestripPrefab;
+    public GameObject policePrefab;
     public float houseCooldown;
     private float houseTimestamp;
 	public float bunninity;
@@ -84,7 +85,8 @@ public class GameMain : MonoBehaviour {
 		float chanceOfObstacle = Time.deltaTime * spikiness;
 		if (chanceOfObstacle > number)
 		{
-			GameObject gangsterGO = Instantiate(spikestripPrefab);
+            GameObject gangsterGO = Instantiate(policePrefab);
+            //GameObject gangsterGO = Instantiate(spikestripPrefab);
 			DontDestroyOnLoad(spikestripPrefab);
 		}
 	}
