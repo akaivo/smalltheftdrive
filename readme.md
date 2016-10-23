@@ -12,6 +12,8 @@ Reference to art used in game:
   <li>
     <a href="http://opengameart.org/content/road-textures">Road in front of house</a>
   </li>
-  <li><a href="http://wallpaper.zone/wallpaper/2233814">Background wallpaper</a>
+  <li><a href="http://wallpaper.zone/wallpaper/2233814">Background wallpaper for main menu</a>
+  </li>
+  <li><a href="http://www.jewelbeat.com/">Background music used in game</a>
   </li>
 </ul>
