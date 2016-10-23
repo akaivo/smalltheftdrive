@@ -11,3 +11,5 @@ EditorBuildSettings:
     path: Assets/scenes/main.unity
   - enabled: 1
     path: Assets/scenes/chase.unity
+  - enabled: 1
+    path: Assets/scenes/gameover.unity

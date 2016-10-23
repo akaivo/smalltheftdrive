@@ -12,10 +12,12 @@ public class GameMain : MonoBehaviour {
 	public GameObject gangsterPrefab;
     public GameObject housePrefabLeft;
     public GameObject housePrefabRight;
+	public GameObject spikestripPrefab;
     public float houseCooldown;
     private float houseTimestamp;
 	public float bunninity;
 	public float gangsterinity;
+	public float spikiness;
    
 
 
@@ -78,12 +80,12 @@ public class GameMain : MonoBehaviour {
 
 	void ObstacleProcessor()
 	{
-		/*float number = Random.value;
-		float chanceOfGangster = Time.deltaTime * gangsterinity;
-		if (chanceOfGangster > number)
+		float number = Random.value;
+		float chanceOfObstacle = Time.deltaTime * spikiness;
+		if (chanceOfObstacle > number)
 		{
-			GameObject gangsterGO = Instantiate(gangsterPrefab);
-			DontDestroyOnLoad(gangsterGO);
-		}*/
+			GameObject gangsterGO = Instantiate(spikestripPrefab);
+			DontDestroyOnLoad(spikestripPrefab);
+		}
 	}
 }

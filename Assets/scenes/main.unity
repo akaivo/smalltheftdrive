@@ -156,9 +156,12 @@ MonoBehaviour:
     type: 2}
   housePrefabRight: {fileID: 1000010066276248, guid: d2ee7523f1836874f83a9dec7815c8d8,
     type: 2}
+  spikestripPrefab: {fileID: 1000011655354700, guid: beaea103d6eb8894a8bda2ca1c7d49b0,
+    type: 2}
   houseCooldown: 0
   bunninity: 1
   gangsterinity: 1
+  spikiness: 0.2
 --- !u!4 &267673362
 Transform:
   m_ObjectHideFlags: 0
@@ -628,7 +631,7 @@ GameObject:
   - 50: {fileID: 1068812838}
   m_Layer: 0
   m_Name: car2
-  m_TagString: Untagged
+  m_TagString: car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
