@@ -29,8 +29,12 @@ public class GameMain : MonoBehaviour {
 	}
 
 	void Update(){
-		GansterProcessor ();
-        BunnyProcessor();
+		if (chaseMode) {
+			ObstacleProcessor ();
+		} else {
+			GansterProcessor ();
+			BunnyProcessor ();
+		}
 	    HouseProcessor();
 		if (Input.GetKey("escape"))
 			Application.Quit();
@@ -70,5 +74,16 @@ public class GameMain : MonoBehaviour {
 			GameObject gangsterGO = Instantiate(gangsterPrefab);
             DontDestroyOnLoad(gangsterGO);
         }
+	}
+
+	void ObstacleProcessor()
+	{
+		/*float number = Random.value;
+		float chanceOfGangster = Time.deltaTime * gangsterinity;
+		if (chanceOfGangster > number)
+		{
+			GameObject gangsterGO = Instantiate(gangsterPrefab);
+			DontDestroyOnLoad(gangsterGO);
+		}*/
 	}
 }

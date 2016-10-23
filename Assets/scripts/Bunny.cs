@@ -27,6 +27,10 @@ public class Bunny : MonoBehaviour {
 		GameObject rainbow = Instantiate (rainbowPrefab);
 		rainbow.GetComponent<Rainbow> ().starPrefab = starPrefab;
 		rainbow.transform.position = transform.position;
+		if (coll.tag == "bullet") {
+			Destroy (coll.gameObject);
+		}
+		Destroy (gameObject);
 	}
 		
 }

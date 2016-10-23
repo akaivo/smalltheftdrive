@@ -147,7 +147,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   setSpeed: 1
-  setChaseMode: 1
+  setChaseMode: 0
   bunnyPrefab: {fileID: 1000011527616322, guid: 4c461e274a7a7d6429e7faa01f749d76,
     type: 2}
   gangsterPrefab: {fileID: 1000011527616322, guid: e503919ad3a38ff46939b6beafba27cc,
@@ -624,6 +624,8 @@ GameObject:
   - 4: {fileID: 1068812835}
   - 212: {fileID: 1068812834}
   - 114: {fileID: 1068812836}
+  - 61: {fileID: 1068812837}
+  - 50: {fileID: 1068812838}
   m_Layer: 0
   m_Name: car2
   m_TagString: Untagged
@@ -692,12 +694,43 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shootingPointRight: {fileID: 1694980270}
   shootingPointLeft: {fileID: 937248993}
-  bulletCooldown: 2
+  bulletCooldown: 1
   bulletTimestamp: 0
   defaultX: 0
-  limitRight: 0
-  limitLeft: 0
-  turnSpeed: 10
+  limitRight: 2.5
+  limitLeft: -2.5
+  turnSpeed: 2
+--- !u!61 &1068812837
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1068812833}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0.024270415, y: 0.00000023841858}
+  serializedVersion: 2
+  m_Size: {x: 1.2344837, y: 3.142918}
+--- !u!50 &1068812838
+Rigidbody2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1068812833}
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 0
 --- !u!1 &1095250852
 GameObject:
   m_ObjectHideFlags: 0

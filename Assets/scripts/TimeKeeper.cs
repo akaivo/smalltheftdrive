@@ -31,6 +31,7 @@ public class TimeKeeper : MonoBehaviour
 
     void SwapScenes()
     {
+		GameMain.chaseMode = true;
         handler.money = score;
         handler.Save();
         GameObject back = GameObject.Find("Background");
@@ -43,6 +44,8 @@ public class TimeKeeper : MonoBehaviour
         DontDestroyOnLoad(road);
         GameObject road2 = GameObject.Find("Road (1)");
         DontDestroyOnLoad(road2);
+		GameObject main = GameObject.Find ("GameMain");
+		DontDestroyOnLoad (main);
 
 
         SceneManager.LoadScene("scenes/chase");
