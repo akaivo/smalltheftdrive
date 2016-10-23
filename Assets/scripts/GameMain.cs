@@ -42,7 +42,9 @@ public class GameMain : MonoBehaviour {
         {
 
             GameObject houseLeft = Instantiate(housePrefabLeft);
+            DontDestroyOnLoad(houseLeft);
             GameObject houseRight = Instantiate(housePrefabRight);
+            DontDestroyOnLoad(houseRight);
             houseTimestamp = Time.time;
         }
 
@@ -55,6 +57,7 @@ public class GameMain : MonoBehaviour {
         if (chanceOfBunny > number)
         {
             GameObject bunnyGo = Instantiate(bunnyPrefab);
+            DontDestroyOnLoad(bunnyGo);
         }
     }
 	void GansterProcessor()
@@ -64,6 +67,7 @@ public class GameMain : MonoBehaviour {
 		if (chanceOfGangster > number)
 		{
 			GameObject gangsterGO = Instantiate(gangsterPrefab);
-		}
+            DontDestroyOnLoad(gangsterGO);
+        }
 	}
 }
