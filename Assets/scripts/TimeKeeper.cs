@@ -5,12 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class TimeKeeper : MonoBehaviour
 {
-    private DataHandler handler;
+    
+    private DataHandler handler = new DataHandler();
     private int score;
     float levelTimer;
+    private float startTime;
     Text timerText;
-    void Start () {
-        handler = new DataHandler();
+    void Start ()
+    {
+
+        startTime = Time.time;
         levelTimer = 15;
         timerText = GetComponent<Text>();
         timerText.text = "Police arrives in "+levelTimer + " seconds!";
@@ -19,8 +23,8 @@ public class TimeKeeper : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-	    timerText.text = "Police arrives in " + (int)(levelTimer - Time.time) + " seconds!";
-        if (Time.time > levelTimer) SwapScenes();
+	    timerText.text = "Police arrives in " + (int)(levelTimer+startTime - Time.time) + " seconds!";
+        if (Time.time > (levelTimer+startTime)) SwapScenes();
     }
 
     public void setScore(int score)
@@ -47,6 +51,7 @@ public class TimeKeeper : MonoBehaviour
 		DontDestroyOnLoad (main);
 
 
-        SceneManager.LoadScene("scenes/chase");
+       //if(SceneManager.GetActiveScene().name == "scenes/main")
+            SceneManager.LoadScene("scenes/chase");
     }
 }
