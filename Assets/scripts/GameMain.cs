@@ -5,7 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class GameMain : MonoBehaviour {
 	public static float speed;
+	public static bool chaseMode;
 	public float setSpeed;
+	public bool setChaseMode;
 	public GameObject bunnyPrefab;
 	public GameObject gangsterPrefab;
     public GameObject housePrefabLeft;
@@ -18,6 +20,7 @@ public class GameMain : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		chaseMode = setChaseMode;
 		speed = setSpeed;
 	    houseTimestamp = 0;
 	    houseCooldown = 5;
