@@ -15,7 +15,7 @@ public class TimeKeeper : MonoBehaviour
     {
 
         startTime = Time.time;
-        levelTimer = 15;
+        levelTimer = 60;
         timerText = GetComponent<Text>();
         timerText.text = "Police arrives in "+levelTimer + " seconds!";
     }

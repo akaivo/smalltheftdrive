@@ -10,7 +10,7 @@ public class EscapeTimeKeeper : MonoBehaviour {
     void Start ()
     {
         startTime = Time.time;
-        levelTimer = 15;
+        levelTimer = 60;
         timerText = GetComponent<Text>();
         timerText.text = "Escape sucessful in " + (int)(levelTimer) + " seconds!";
     }
