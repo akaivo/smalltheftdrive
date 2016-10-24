@@ -8,7 +8,7 @@ public class PoliceCar : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
-	    int pos = Random.Range(0, 3);
+	    int pos = Random.Range(0, 4);
         transform.position = new Vector3(coords[pos], 10, 0);
     }
 	
